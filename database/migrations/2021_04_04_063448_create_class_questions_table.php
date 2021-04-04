@@ -14,8 +14,7 @@ class CreateClassQuestionsTable extends Migration
     public function up()
     {
         Schema::create('class_questions', function (Blueprint $table) {
-            $table->integer('id');
-            $table->primary('id');
+            $table->increments('id');
 
             $table->integer('id_class')->unsigned();
             $table->integer('id_quest')->unsigned();

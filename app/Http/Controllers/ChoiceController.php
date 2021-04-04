@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\choice;
+use App\Models\Choice;
 use Illuminate\Http\Request;
 
 class ChoiceController extends Controller
